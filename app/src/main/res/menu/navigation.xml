@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/gallery"
+        android:icon="@drawable/navi_gallery" />
+
+    <item
+        android:id="@+id/move"
+        android:icon="@drawable/navi_go" />
+
+    <item
+        android:id="@+id/plants"
+        android:icon="@drawable/navi_plants" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/navi_settings" />
+
+
+
+</menu>
