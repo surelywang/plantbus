@@ -3,20 +3,18 @@
 
     <item
         android:id="@+id/gallery"
+        android:title="Gallery"
         android:icon="@drawable/navi_gallery" />
-
     <item
         android:id="@+id/move"
+        android:title="Move"
         android:icon="@drawable/navi_go" />
-
     <item
         android:id="@+id/plants"
+        android:title="Plants"
         android:icon="@drawable/navi_plants" />
-
     <item
         android:id="@+id/settings"
+        android:title="Settings"
         android:icon="@drawable/navi_settings" />
-
-
-
 </menu>
