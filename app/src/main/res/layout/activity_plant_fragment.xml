@@ -7,16 +7,353 @@
     tools:context=".PlantFragment">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/plant_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="45dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
         android:text="Plant's Status"
         android:textColor="@android:color/black"
         android:textSize="24sp"
-        android:textStyle="bold"
+        app:fontFamily="@font/open_sans_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/plant_status_bgd"
+        android:layout_width="351dp"
+        android:layout_height="126dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/pageflip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plant_title" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/plant_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="36dp"
+        android:minHeight="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plant_title">
+
+        <TextView
+            android:id="@+id/plant_location_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Current Location:"
+            android:textSize="18sp"
+            android:typeface="normal"
+            app:fontFamily="@font/source_sans_pro_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/plant_location_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Jacobs Hall"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="normal"
+            app:fontFamily="@font/source_sans_pro_light"
+            app:layout_constraintStart_toEndOf="@+id/plant_location_op"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/plant_soil_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="8dp"
+            android:text="Healthy"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="normal"
+            app:fontFamily="@font/source_sans_pro_light"
+            app:layout_constraintStart_toEndOf="@+id/plant_soil_op"
+            app:layout_constraintTop_toBottomOf="@+id/plant_location_ip" />
+
+        <TextView
+            android:id="@+id/plant_soil_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Soil Condition:"
+            android:textSize="18sp"
+            android:typeface="normal"
+            app:fontFamily="@font/source_sans_pro_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plant_location_op" />
+
+        <TextView
+            android:id="@+id/plant_water_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Water Condition:"
+            android:textSize="18sp"
+            android:typeface="normal"
+            app:fontFamily="@font/source_sans_pro_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plant_soil_op" />
+
+        <TextView
+            android:id="@+id/plant_water_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Needs water"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="normal"
+            app:fontFamily="@font/source_sans_pro_light"
+            app:layout_constraintStart_toEndOf="@+id/plant_water_op"
+            app:layout_constraintTop_toBottomOf="@+id/plant_soil_ip" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/plant_descriptions"
+        android:layout_width="wrap_content"
+        android:layout_height="151dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plant_status">
+
+        <ImageView
+            android:id="@+id/plant1_img"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/pot_happy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/plant1_soil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Soil"
+            android:textSize="12sp"
+            android:typeface="normal"
+            app:fontFamily="@font/source_sans_pro_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plant1_img" />
+
+        <TextView
+            android:id="@+id/plant1_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Water"
+            android:textSize="12sp"
+            android:typeface="normal"
+            app:fontFamily="@font/source_sans_pro_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plant1_soil" />
+
+        <ImageView
+            android:id="@+id/plant1_soil_img"
+            android:layout_width="30dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:src="#94cc96"
+            app:layout_constraintStart_toEndOf="@+id/plant1_soil"
+            app:layout_constraintTop_toBottomOf="@+id/plant1_img" />
+
+        <ImageView
+            android:id="@+id/plant1_water_img"
+            android:layout_width="30dp"
+            android:layout_height="7dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            android:src="#FE9595"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/plant1_water"
+            app:layout_constraintTop_toBottomOf="@+id/plant1_soil_img" />
+
+        <ImageView
+            android:id="@+id/plant2_img"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/pot_sad"
+            app:layout_constraintStart_toEndOf="@+id/plant1_img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/plant2_soil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="8dp"
+            android:text="Soil"
+            android:textSize="12sp"
+            android:typeface="normal"
+            app:fontFamily="@font/source_sans_pro_light"
+            app:layout_constraintStart_toEndOf="@+id/plant1_soil_img"
+            app:layout_constraintTop_toBottomOf="@+id/plant2_img" />
+
+        <TextView
+            android:id="@+id/plant2_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:layout_marginStart="54dp"
+            android:text="Water"
+            android:textSize="12sp"
+            android:typeface="normal"
+            app:fontFamily="@font/source_sans_pro_light"
+            app:layout_constraintStart_toEndOf="@+id/plant1_water_img"
+            app:layout_constraintTop_toBottomOf="@+id/plant2_soil" />
+
+        <ImageView
+            android:id="@+id/plant2_soil_img"
+            android:layout_width="30dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:src="#94cc96"
+            app:layout_constraintStart_toEndOf="@+id/plant2_soil"
+            app:layout_constraintTop_toBottomOf="@+id/plant2_img" />
+
+        <ImageView
+            android:id="@+id/plant2_water_img"
+            android:layout_width="30dp"
+            android:layout_height="7dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            android:src="#FE9595"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/plant2_water"
+            app:layout_constraintTop_toBottomOf="@+id/plant2_soil_img" />
+
+        <ImageView
+            android:id="@+id/plant3_img"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/pot_happy"
+            app:layout_constraintStart_toEndOf="@+id/plant2_img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/plant3_soil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="8dp"
+            android:text="Soil"
+            android:textSize="12sp"
+            android:typeface="normal"
+            app:fontFamily="@font/source_sans_pro_light"
+            app:layout_constraintStart_toEndOf="@+id/plant2_soil_img"
+            app:layout_constraintTop_toBottomOf="@+id/plant3_img" />
+
+        <TextView
+            android:id="@+id/plant3_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:layout_marginStart="56dp"
+            android:text="Water"
+            android:textSize="12sp"
+            android:typeface="normal"
+            app:fontFamily="@font/source_sans_pro_light"
+            app:layout_constraintStart_toEndOf="@+id/plant2_water_img"
+            app:layout_constraintTop_toBottomOf="@+id/plant3_soil" />
+
+        <ImageView
+            android:id="@+id/plant3_soil_img"
+            android:layout_width="30dp"
+            android:layout_height="7dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:src="#94cc96"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/plant3_soil"
+            app:layout_constraintTop_toBottomOf="@+id/plant3_img" />
+
+        <ImageView
+            android:id="@+id/plant3_water_img"
+            android:layout_width="30dp"
+            android:layout_height="7dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            android:src="#FE9595"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/plant3_water"
+            app:layout_constraintTop_toBottomOf="@+id/plant3_soil_img" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/plant_divider"
+        android:layout_width="325dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:src="#bbbbbb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plant_descriptions" />
+
 </android.support.constraint.ConstraintLayout>
