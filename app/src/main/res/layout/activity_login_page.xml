@@ -48,6 +48,7 @@
             android:onClick="Login"
             android:text="SIGN IN"
             android:textColor="@android:color/white"
+            android:textStyle="bold"
             app:fontFamily="@font/source_sans_pro"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
