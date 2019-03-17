@@ -7,7 +7,7 @@
     tools:context=".MoveFragment">
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/frame_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="45dp"
@@ -31,10 +31,37 @@
         android:text="START MOVING"
         android:textColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+        app:layout_constraintTop_toBottomOf="@+id/static_map" />
+
+    <ImageView
+        android:id="@+id/static_map"
+        android:layout_width="320dp"
+        android:layout_height="275dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/static_map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_title" />
+
+    <ImageView
+        android:id="@+id/navi_divider"
+        android:layout_width="325dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:src="#bbbbbb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/today_title" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/today_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="45dp"
@@ -46,17 +73,328 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="320dp"
-        android:layout_height="275dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/static_map"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mover_1"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/navi_divider">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/mover_1"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/navi_divider">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/mover_1"
+                android:layout_width="362dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/navi_divider">
+
+                <TextView
+                    android:id="@+id/mover1_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Shirley"
+                    app:layout_constraintStart_toEndOf="@+id/mover1_img" />
+
+                <TextView
+                    android:id="@+id/mover1_origin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="4dp"
+                    android:text="South Hall"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/mover1_time"
+                    app:layout_constraintTop_toBottomOf="@+id/mover1_origin_img" />
+
+                <ImageView
+                    android:id="@+id/mover1_origin_img"
+                    android:layout_width="15dp"
+                    android:layout_height="19dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginStart="130dp"
+                    android:src="@drawable/navi_origin"
+                    app:layout_constraintStart_toEndOf="@+id/mover1_name" />
+
+                <TextView
+                    android:id="@+id/mover1_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="1:05PM"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/mover1_img"
+                    app:layout_constraintTop_toBottomOf="@+id/mover1_name" />
+
+                <ImageView
+                    android:id="@+id/mover1_img"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="40dp"
+                    android:src="@drawable/staticplant1"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/mover1_dest_img"
+                    android:layout_width="11dp"
+                    android:layout_height="19dp"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginStart="64dp"
+                    android:src="@drawable/navi_dest"
+                    app:layout_constraintStart_toEndOf="@+id/mover1_origin_img" />
+
+                <TextView
+                    android:id="@+id/mover1_dest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Evans Hall"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/mover1_origin"
+                    app:layout_constraintTop_toBottomOf="@+id/mover1_dest_img" />
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/mover1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Shirley"
+                app:layout_constraintStart_toEndOf="@+id/mover1_img" />
+
+            <TextView
+                android:id="@+id/mover1_origin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="4dp"
+                android:text="South Hall"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/mover1_time"
+                app:layout_constraintTop_toBottomOf="@+id/mover1_origin_img" />
+
+            <ImageView
+                android:id="@+id/mover1_origin_img"
+                android:layout_width="15dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginStart="130dp"
+                android:src="@drawable/navi_origin"
+                app:layout_constraintStart_toEndOf="@+id/mover1_name" />
+
+            <TextView
+                android:id="@+id/mover1_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="1:05PM"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/mover1_img"
+                app:layout_constraintTop_toBottomOf="@+id/mover1_name" />
+
+            <ImageView
+                android:id="@+id/mover1_img"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/staticplant1"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/mover1_dest_img"
+                android:layout_width="11dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginStart="64dp"
+                android:src="@drawable/navi_dest"
+                app:layout_constraintStart_toEndOf="@+id/mover1_origin_img" />
+
+            <TextView
+                android:id="@+id/mover1_dest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:text="Evans Hall"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/mover1_origin"
+                app:layout_constraintTop_toBottomOf="@+id/mover1_dest_img" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/mover_1"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/navi_divider">
+
+            <TextView
+                android:id="@+id/mover1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Shirley"
+                app:layout_constraintStart_toEndOf="@+id/mover1_img" />
+
+            <TextView
+                android:id="@+id/mover1_origin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="4dp"
+                android:text="South Hall"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/mover1_time"
+                app:layout_constraintTop_toBottomOf="@+id/mover1_origin_img" />
+
+            <ImageView
+                android:id="@+id/mover1_origin_img"
+                android:layout_width="15dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginStart="130dp"
+                android:src="@drawable/navi_origin"
+                app:layout_constraintStart_toEndOf="@+id/mover1_name" />
+
+            <TextView
+                android:id="@+id/mover1_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="1:05PM"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/mover1_img"
+                app:layout_constraintTop_toBottomOf="@+id/mover1_name" />
+
+            <ImageView
+                android:id="@+id/mover1_img"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/staticplant1"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/mover1_dest_img"
+                android:layout_width="11dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginStart="64dp"
+                android:src="@drawable/navi_dest"
+                app:layout_constraintStart_toEndOf="@+id/mover1_origin_img" />
+
+            <TextView
+                android:id="@+id/mover1_dest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:text="Evans Hall"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/mover1_origin"
+                app:layout_constraintTop_toBottomOf="@+id/mover1_dest_img" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/mover1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Shirley"
+            app:layout_constraintStart_toEndOf="@+id/mover1_img" />
+
+        <TextView
+            android:id="@+id/mover1_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="4dp"
+            android:text="South Hall"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/mover1_time"
+            app:layout_constraintTop_toBottomOf="@+id/mover1_origin_img" />
+
+        <ImageView
+            android:id="@+id/mover1_origin_img"
+            android:layout_width="15dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginStart="130dp"
+            android:src="@drawable/navi_origin"
+            app:layout_constraintStart_toEndOf="@+id/mover1_name" />
+
+        <TextView
+            android:id="@+id/mover1_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="1:05PM"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/mover1_img"
+            app:layout_constraintTop_toBottomOf="@+id/mover1_name" />
+
+        <ImageView
+            android:id="@+id/mover1_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/staticplant1"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/mover1_dest_img"
+            android:layout_width="11dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginStart="64dp"
+            android:src="@drawable/navi_dest"
+            app:layout_constraintStart_toEndOf="@+id/mover1_origin_img" />
+
+        <TextView
+            android:id="@+id/mover1_dest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:text="Evans Hall"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/mover1_origin"
+            app:layout_constraintTop_toBottomOf="@+id/mover1_dest_img" />
+    </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>
