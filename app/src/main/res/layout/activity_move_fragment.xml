@@ -30,6 +30,7 @@
         android:background="#8BB9A4"
         android:text="START MOVING"
         android:textColor="@android:color/white"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/static_map" />
 
