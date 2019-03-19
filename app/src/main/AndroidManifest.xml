@@ -50,7 +50,7 @@
             android:value="AIzaSyCY8GjgHZTXpkeq14mUcqC3_kHdvvmdwMA" />
 
         <activity android:name=".DestinationActivity" />
-        <activity android:name=".NavigationActivity"></activity>
+        <activity android:name=".NavigationActivity" />
     </application>
 
 </manifest>
