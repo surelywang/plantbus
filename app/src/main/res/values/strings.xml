@@ -5,4 +5,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_gallery_fragment">GalleryFragment</string>
     <string name="title_activity_maps">Map</string>
+
+    <string name="open_weather_maps_app_id">8291267e246af780034fb9141f60cabc</string>
+    <string name="place_not_found">Sorry, no weather data found.</string>
 </resources>
