@@ -14,7 +14,7 @@ public class DestinationActivity extends AppCompatActivity {
     }
 
     public void mapTrigger(View view) {
-        Intent intent = new Intent(this, MapsActivity.class);
+        Intent intent = new Intent(this, NavigationActivity.class);
         startActivity(intent);
     }
 }

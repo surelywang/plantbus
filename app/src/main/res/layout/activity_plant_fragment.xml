@@ -413,15 +413,16 @@
         android:id="@+id/imageView34"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="103dp"
+        android:layout_marginBottom="98dp"
         android:layout_marginEnd="44dp"
         android:layout_marginLeft="164dp"
         android:layout_marginRight="44dp"
         android:layout_marginStart="164dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="75dp"
         android:src="@drawable/sunny"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView31"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
