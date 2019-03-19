@@ -44,12 +44,13 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyCY8GjgHZTXpkeq14mUcqC3_kHdvvmdwMA" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCY8GjgHZTXpkeq14mUcqC3_kHdvvmdwMA" />
 
-        <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
-        <activity android:name=".DestinationActivity"></activity>
+        <activity android:name=".DestinationActivity" />
+        <activity android:name=".NavigationActivity"></activity>
     </application>
 
 </manifest>

@@ -11,9 +11,13 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            resValue "string", "google_maps_api_key", "AIzaSyCY8GjgHZTXpkeq14mUcqC3_kHdvvmdwMA"
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue "string", "google_maps_api_key", "AIzaSyCY8GjgHZTXpkeq14mUcqC3_kHdvvmdwMA"
         }
     }
 }
