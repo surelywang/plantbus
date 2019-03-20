@@ -5,4 +5,28 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_gallery_fragment">GalleryFragment</string>
     <string name="title_activity_maps">Map</string>
+
+    <string name="open_weather_maps_app_id">8291267e246af780034fb9141f60cabc</string>
+    <string name="place_not_found">Sorry, no weather data found.</string>
+    <string name="api_map_key">AIzaSyCY8GjgHZTXpkeq14mUcqC3_kHdvvmdwMA</string>
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
 </resources>
