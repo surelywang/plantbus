@@ -8,4 +8,5 @@
 
     <string name="open_weather_maps_app_id">8291267e246af780034fb9141f60cabc</string>
     <string name="place_not_found">Sorry, no weather data found.</string>
+    <string name="api_map_key">AIzaSyCY8GjgHZTXpkeq14mUcqC3_kHdvvmdwMA</string>
 </resources>
