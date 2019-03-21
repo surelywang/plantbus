@@ -87,7 +87,7 @@ public class NavigationActivity extends AppCompatActivity implements OnMapReadyC
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         // Add a marker in Sydney and move the camera
-        LatLng BerkeleyMarker = new LatLng(37.8760, -122.2588);
+        LatLng BerkeleyMarker = new LatLng(37.8714, -122.2585);
         mMap.addMarker(new
                 MarkerOptions().position(BerkeleyMarker).title("Marker in Berkeley"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(BerkeleyMarker));

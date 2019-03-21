@@ -35,7 +35,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="97dp"
-        android:text="Tnanks for taking the plants to see the world!"
+        android:text="Thanks for taking the plants to see the world!"
         android:textColor="@android:color/black" />
 
     <Button
