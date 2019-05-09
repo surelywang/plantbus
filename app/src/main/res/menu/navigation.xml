@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/gallery"
-        android:title="Gallery"
-        android:icon="@drawable/navi_gallery" />
+        android:id="@+id/home"
+        android:title=""
+        android:icon="@drawable/btn_home" />
     <item
-        android:id="@+id/move"
-        android:title="Move"
-        android:icon="@drawable/navi_go" />
+        android:id="@+id/time"
+        android:title=""
+        android:icon="@drawable/btn_time" />
     <item
-        android:id="@+id/plants"
-        android:title="Plants"
-        android:icon="@drawable/navi_plants" />
+        android:id="@+id/report"
+        android:title=""
+        android:icon="@drawable/btn_report" />
     <item
-        android:id="@+id/settings"
-        android:title="Settings"
-        android:icon="@drawable/navi_settings" />
+        android:id="@+id/network"
+        android:title=""
+        android:icon="@drawable/btn_network" />
 </menu>

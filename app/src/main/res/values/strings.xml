@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PlantBus</string>
+    <string name="app_name">Together</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
@@ -29,4 +29,15 @@
     <string name="menu_disconnect">Disconnect</string>
     <string name="menu_scan">Scan</string>
     <string name="menu_stop">Stop</string>
+
+
+    <string-array name="options">
+        <item>Happy</item>
+        <item>Sad</item>
+        <item># Tantrums</item>
+        <item># Restroom Uses</item>
+        <item># Meals Ate</item>
+        <item># Rewards Given</item>
+    </string-array>
+
 </resources>

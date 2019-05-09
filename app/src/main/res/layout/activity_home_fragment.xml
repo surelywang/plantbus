@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.surelywang.together.HomeFragment">
+
+    <TextView
+        android:id="@+id/homeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:text="HOME"
+        android:textColor="#5b7388"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/quicksand_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btnTracker0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="344dp"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="292dp"
+        android:text="0"
+        android:textColor="#b1b0b0"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:fontFamily="@font/open_sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/homeTrackBar" />
+
+    <ImageView
+        android:id="@+id/homeTrackBar"
+        android:layout_width="340dp"
+        android:layout_height="465dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/home_trackingbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeStatus"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <ImageView
+        android:id="@+id/track10"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="237dp"
+        android:src="@drawable/btn_tracker"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/track9"
+        app:layout_constraintTop_toBottomOf="@+id/homeStatus" />
+
+    <ImageView
+        android:id="@+id/track6"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="237dp"
+        android:visibility="invisible"
+        android:src="@drawable/btn_tracker"
+        app:layout_constraintStart_toEndOf="@+id/track5"
+        app:layout_constraintTop_toBottomOf="@+id/homeStatus" />
+
+    <ImageView
+        android:id="@+id/track5"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="237dp"
+        android:visibility="invisible"
+        android:src="@drawable/btn_tracker"
+        app:layout_constraintStart_toEndOf="@+id/track4"
+        app:layout_constraintTop_toBottomOf="@+id/homeStatus" />
+
+    <ImageView
+        android:id="@+id/track2"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="237dp"
+        android:src="@drawable/btn_tracker"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/track1"
+        app:layout_constraintTop_toBottomOf="@+id/homeStatus" />
+
+    <ImageView
+        android:id="@+id/track1"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="237dp"
+        android:src="@drawable/btn_tracker"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeStatus" />
+
+    <ImageView
+        android:id="@+id/track4"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="237dp"
+        android:visibility="invisible"
+        android:src="@drawable/btn_tracker"
+        app:layout_constraintStart_toEndOf="@+id/track3"
+        app:layout_constraintTop_toBottomOf="@+id/homeStatus" />
+
+    <ImageView
+        android:id="@+id/track9"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="237dp"
+        android:visibility="invisible"
+        android:src="@drawable/btn_tracker"
+        app:layout_constraintStart_toEndOf="@+id/track8"
+        app:layout_constraintTop_toBottomOf="@+id/homeStatus" />
+
+    <ImageView
+        android:id="@+id/track7"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="237dp"
+        android:visibility="invisible"
+        android:src="@drawable/btn_tracker"
+        app:layout_constraintStart_toEndOf="@+id/track6"
+        app:layout_constraintTop_toBottomOf="@+id/homeStatus" />
+
+    <ImageView
+        android:id="@+id/track8"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="237dp"
+        android:visibility="invisible"
+        android:src="@drawable/btn_tracker"
+        app:layout_constraintStart_toEndOf="@+id/track7"
+        app:layout_constraintTop_toBottomOf="@+id/homeStatus" />
+
+    <ImageView
+        android:id="@+id/track3"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="237dp"
+        android:visibility="invisible"
+        android:src="@drawable/btn_tracker"
+        app:layout_constraintStart_toEndOf="@+id/track2"
+        app:layout_constraintTop_toBottomOf="@+id/homeStatus" />
+
+    <ImageView
+        android:id="@+id/homeStatus"
+        android:layout_width="306dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/home_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTitle" />
+
+</android.support.constraint.ConstraintLayout>
